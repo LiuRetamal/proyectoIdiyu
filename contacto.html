@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Cargar normalize para css-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--  Importar fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <!--Cargar css principal-->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!--Encabezado de la pagina.-->
+    <header>
+        <a href="index.html">
+            <h1>Idiyu</h1>
+        </a>
+        <img src="../img/mundo.png" width=100px alt="">
+    </header>
+
+    <!--Barra de menú con enlaces-->
+    <div class="nav-principal">
+        <nav class="menu">        
+            <a href="index.html">Inicio</a>
+            <a href="">Perfil</a>  
+            <div class="perfil">
+                <a href="cuenta.html">Mi Cuenta</a>
+                <a href="login.html">Log In</a>
+                <a href="#">Log Out</a>
+            </div> 
+            <a href="">Paises</a>
+            <div class="paises">
+                <a href="china.html">China</a>
+                <a href="australia.html">Australia</a>
+                <a href="mexico.html">Mexico</a>
+                <a href="brasil.html">Brasil</a>
+                <a href="alemania.html">Alemania</a>
+                <a href="congo.html">Congo</a>
+            </div>
+            <a href="contacto.html">Contacto</a>   
+        </nav>
+    </div>
+
+    <section>
+         <!--Título del Formulario-->
+         <h2>Contacto</h2>
+
+         <form class="formulario">
+             <fieldset>
+                 <!--Legend para indicaciones al usuario-->
+                 <legend>Contáctame llenando todos los campos</legend>
+ 
+                 <!--Etiquetas y Recuadros para rellenar el formulario-->
+                 <!--Usamos divs para agrupar cada uno-->
+                 <div class="contenedor-campos">
+                     <div class="campo">
+                         <label for="">Nombre</label>
+                         <input class="input-text" type="text" placeholder="Escribe tu nombre">
+                     </div>
+     
+                     <div class="campo">
+                         <label for="">Correo</label>
+                         <input class="input-text" type="email" placeholder="Escribe tu e-mail">
+                     </div>
+     
+                     <div class="campo">
+                         <label for="">Teléfono</label>
+                         <input class="input-text" type="tel" placeholder="Escribe tu número">
+                     </div>
+     
+                     <div class="campo">
+                         <label for="">Mensaje</label>
+                         <textarea class="input-text"></textarea>
+                     </div>
+                     
+                     <div class="alinear-derecha flex">
+                         <input class="boton w-sm-100" type="submit" value="Enviar">
+                     </div>
+     
+                 </div>
+                 
+             </fieldset>
+ 
+         </form>
+    </section>
+    <!--Pie de página. Al final del todo-->
+    <footer class="footer">
+        <p>Todos los derechos resevados. Liu Retamal Freelancer</p>
+    </footer>
+</body>
+</html>

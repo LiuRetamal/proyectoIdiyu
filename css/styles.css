@@ -1,0 +1,27 @@
+:root{
+    --blanco: #FFFFFF;
+    --oscuro: #000000;
+    --primario: #F16D6D;
+    --secundario: #F7D970;
+    --tercero: #61D57B;
+    --gris: #757575;
+    --fuente-principal: 3.8rem;
+    --grislaro: #DFE9F3;
+    --fuente: 'Lato', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;/*Hack Box Model*/
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;/*Predeterminar medidas para padding*/
+}
+body{
+    font-size: 16px;
+    font-family: var(--fuente);
+    background-color: var(--primario);
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Cargar normalize para css-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--  Importar fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <!--Cargar css principal-->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Log In</title>
+</head>
+<body>
+    <!--Encabezado de la pagina.-->
+    <header>
+        <a href="index.html">
+            <h1>Idiyu</h1>
+        </a>
+        <img src="../img/mundo.png" width=100px alt="">
+    </header>
+
+    <!--Barra de menú con enlaces-->
+    <div class="nav-principal">
+        <nav class="menu">    
+            <a href="index.html">Inicio</a>     
+            <a href="">Perfil</a>
+            <div class="perfil">
+                <a href="cuenta.html">Mi Cuenta</a>
+                <a href="login.html">Log In</a>
+                <a href="#">Log Out</a>
+            </div> 
+            
+            <a href="">Paises</a>
+            <div class="paises">
+                <a href="china.html">China</a>
+                <a href="australia.html">Australia</a>
+                <a href="mexico.html">Mexico</a>
+                <a href="brasil.html">Brasil</a>
+                <a href="alemania.html">Alemania</a>
+                <a href="congo.html">Congo</a>
+            </div>
+            <a href="contacto.html">Contacto</a>   
+        </nav>
+    </div>
+
+    <div id="formulario">
+        <form>
+            <!-- Username -->
+            <label for="name">Nombre de usuario:</label>
+            <input type="name">
+            <!-- Password -->
+            <label for="username">Password:</label>
+            <input type="password">
+            <div id="lower">
+                <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
+                <!-- Submit Button -->
+                <input type="submit" value="Login">
+            </div>
+        </form>       
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos resevados. Liu Retamal</p>
+    </footer>
+</body>
+</html>
