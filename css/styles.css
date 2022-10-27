@@ -10,6 +10,7 @@
     --fuente-principal: 3.8rem;
     --grislaro: #DFE9F3;
     --fuente: 'Lato', sans-serif;
+    --pais:rgba(0, 0, 0, 0.1);
 }
 
 html{
@@ -152,8 +153,11 @@ header{
     .sidebar a {font-size: 18px;}
   }
 
-/*--------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
 /*MAIN*/
+/*IMAGENES PAISES*/
+
+/*Div principal que contiene todos los paises*/
 .paises{
   display: grid;
   grid-template-columns: repeat(2, 1fr) ;  
@@ -165,6 +169,7 @@ header{
     
   }
 }
+/*Div que contiene cada pais*/
 .pais{
   margin: 1rem 1rem 0rem 1rem;
   padding: 1rem 1rem 0rem 1rem;
@@ -173,12 +178,55 @@ header{
   width: 100%;
   gap: 2rem;
 }
+/*
+.pais{
+  display:inline-block;
+  position:relative;
+}
+.pais > div {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  padding:15rem;
+  margin:0;
+}
+.imgPaises:hover{
+  opacity: 0.1;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}*/
 @media (min-width: 768px){ 
   .imgPaises{
     width: 100%;
-    border-radius: 1.5rem;
+    border-radius: 1.5rem;    
+  } 
+  /* 
+  .pais{
+    display:inline-block;
+    position:relative;
   }
+  .pais > div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:15rem;
+    margin:0;
+  }
+  .imgPaises:hover{
+    opacity: 0.1;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+  }*/
 }
+
 
 /*--------------------------------------------------*/
 /*FOOTER*/
@@ -222,9 +270,7 @@ header{
   background-color: #555;
 }
 
+ /*--------------------------------------------------*/
 
 
-
-
-
-
+  
