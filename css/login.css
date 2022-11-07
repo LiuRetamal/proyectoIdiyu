@@ -1,0 +1,60 @@
+:root{
+    --blanco: #FFFFFF;
+    --oscuro: #000000;
+    --primario: #F16D6D;
+    --primarioClaro: #CF150C;
+    --primarioSegundo: #951717;
+    --secundario: #F7D970;
+    --tercero: #61D57B;
+    --gris: #757575;
+    --fuente-principal: 3.8rem;
+    --grislaro: #DFE9F3;
+    --fuente: 'Lato', sans-serif;
+    --pais:rgba(0, 0, 0, 0.1);
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;/*Hack Box Model*/
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;/*Predeterminar medidas para padding*/
+}
+body{
+    font-size: 16px;
+    font-family: var(--fuente);
+    background-color:lightgrey;
+    margin: 0;
+}
+
+/********************************CUERPO****************************************/
+.formulario{
+    padding: 5rem;
+}
+form{
+    text-align: center;
+}
+label{
+    display: block;
+    text-align: center;
+    padding:2rem;
+    text-transform: uppercase;
+    font-weight:500;
+}
+.cuadrado{
+    display: inline;
+}
+.inputs{
+    width:50%;
+    padding: 1rem;
+}
+.boton{
+    width: 20%;
+    height: 5rem;
+    border-radius: 10px;
+    border: 1px solid var(--gris);
+    text-transform: uppercase;
+    font-weight: 300;
+}

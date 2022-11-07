@@ -14,20 +14,31 @@
     <!--Cargar css principal-->
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
-    <!--Cargar script para botones y menu desplegable-->
-    <script type="text/javascript" src="js/idiyu.js"></script>
 
+    <!--Cargar css diseño login-->
+    <link rel="preload" href="css/login.css" as="style">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!--Script de menu desplegable-->
+    <script type="text/javascript" src="js/idiyu.js"></script>
+    <!--Logo en la pestaña-->
     <link rel="shortcut icon" href="img/logo.png">
+
+    <!--titulo de la pestaña-->
     <title>Log In</title>
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    
 <!--------------------------------------------------HEADER / CABECERA-------------------------------------------------------->
     <header>
+        <!--Título de la página-->
         <a href="index.html" class="titulo">
-            <h1 >Idiyu</h1>
+            <h1 >Log In</h1>
         </a>
+        <!--Logo de la página-->
         <img src="../img/logo.png" class="imgTitulo" alt="">
+
+        <!--Icono para menú desplegable-->
         <div class="burger">
             <button class="openbtn" onclick="openNav()">&#9776;</button>
         </div>
@@ -49,18 +60,19 @@
         </div>
     </header>
 <!--------------------------------------------------MAIN / CUERPO-------------------------------------------------------->
-    <div id="formulario">
+    <div class="formulario">
         <form>
             <!-- Username -->
             <label for="name">Nombre de usuario:</label>
-            <input type="name">
+            <input type="name" class="inputs">
             <!-- Password -->
             <label for="username">Password:</label>
-            <input type="password">
+            <input type="password" class="inputs">
             <div id="lower">
-                <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
+                <input type="checkbox" class="cuadrado"><label class="check" for="checkbox" class="cuadrado">Keep me logged in</label>
+                
                 <!-- Submit Button -->
-                <input type="submit" value="Login">
+                <input type="submit" value="Login" class="boton">
             </div>
         </form>       
     </div>

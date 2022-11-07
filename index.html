@@ -16,20 +16,31 @@
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 
+    <!--Logo en la pestaña-->
     <link rel="shortcut icon" href="img/logo.png">
+
+    <!--Título de la pestaña-->
     <title>Idiyu</title>
-    <!--Script manu desplegable-->
+
+    <!--Script menú desplegable-->
     <script type="text/javascript" src="js/idiyu.js"></script>
     
 </head>
 <body>
+
+    <!--Botón para subir arriba-->
     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
 <!--------------------------------------------------HEADER / CABECERA-------------------------------------------------------->
     <header>
+        <!--Título de la página-->
         <a href="index.html" class="titulo">
             <h1 >Idiyu</h1>
         </a>
+        <!--Logo de la página-->
         <img src="../img/logo.png" class="imgTitulo" alt="">
+
+        <!--Icono para menú desplegable-->
         <div class="burger">
             <button class="openbtn" onclick="openNav()">&#9776;</button>
         </div>
@@ -50,34 +61,42 @@
             <a href="#">Log Out</a>
         </div>
     </header>
+    
 <!--------------------------------------------------MAIN / CUERPO-------------------------------------------------------->
     <main class="contenedor">
+        <!--Div para agrupar todos los paises-->
         <div class="paises">
+            <!--Div para china-->
             <div class="pais">                
                 <a href="china.html">
                     <img src="../img/china.png"  class="imgPaises" alt="">
                 </a>               
             </div>
+            <!--Div para australia-->
             <div class="pais">
                 <a href="australia.html">
                     <img src="../img/australia.jpg" class="imgPaises" alt="">
                 </a>
             </div>
+            <!--Div para mexico-->
             <div class="pais">
                 <a href="mexico.html">
                     <img src="../img/mex.jpg"class="imgPaises" alt="">
                 </a> 
             </div>
+            <!--Div para brasil-->
             <div class="pais">
                 <a href="brasil.html">
                     <img src="../img/brasil.jpg" class="imgPaises" alt="">
                 </a> 
             </div>
+            <!--Div para alemania-->
             <div class="pais">
                 <a href="alemania.html">
                     <img src="../img/alemania.jpg" class="imgPaises" alt="">
                 </a>
             </div>
+            <!--Div para congo-->
             <div class="pais">
                 <a href="congo.html">
                     <img src="../img/congo.jpg" class="imgPaises" alt="">
@@ -88,7 +107,9 @@
     
  <!--------------------------------------------------FOOTER / PIE-------------------------------------------------------->
     <footer class="footer">
+        <!--Div para agrupar los iconos-->
         <div class="iconos">
+            <!--Div para icono instagram-->
             <div class="icono1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -97,6 +118,7 @@
                     <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                 </svg>
             </div>
+            <!--Div para icono linkedin-->
             <div class="icono2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -105,7 +127,9 @@
                     <line x1="8" y1="8" x2="8" y2="8.01" />
                     <line x1="12" y1="16" x2="12" y2="11" />
                     <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                </svg></div>
+                </svg>
+            </div>
+            <!--Div para icono github-->
             <div class="icono3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -113,42 +137,6 @@
                 </svg>
             </div>
         </div>      
-        
     </footer>
-
-
-    <!--Scripts
-    <script>
-        function openNav() {
-        document.getElementById("mySidepanel").style.width = "250px";
-        }
-
-        /* Set the width of the sidebar to 0 (hide it) */
-        function closeNav() {
-        document.getElementById("mySidepanel").style.width = "0";
-        }
-    </script>
-    Script boton
-    <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-    </script>-->
 </body>
 </html>
