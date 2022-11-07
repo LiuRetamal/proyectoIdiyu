@@ -1,16 +1,6 @@
 :root{
-    --blanco: #FFFFFF;
-    --oscuro: #000000;
-    --primario: #F16D6D;
-    --primarioClaro: #CF150C;
-    --primarioSegundo: #951717;
-    --secundario: #F7D970;
-    --tercero: #61D57B;
-    --gris: #757575;
     --fuente-principal: 3.8rem;
-    --grislaro: #DFE9F3;
     --fuente: 'Lato', sans-serif;
-    --pais:rgba(0, 0, 0, 0.1);
 }
 
 html{
@@ -27,7 +17,6 @@ body{
     font-family: var(--fuente);
     background-color:lightgrey;
     margin: 0;
-    
 }
 
 
@@ -37,13 +26,13 @@ body{
 header{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr; 
-    background-color:var(--oscuro);
+    background-color:var(--primarioSegundo);
     margin:0px;
     height: 8rem;
 }
 @media (min-width: 768px){ 
   header{
-    background-color:var(--oscuro);
+    background-color:var(--primarioSegundo);
     height: 8rem;
   }
   
@@ -52,7 +41,7 @@ header{
   grid-column: 2 / 3;    
   text-decoration: none;
   text-align: center; 
-  color:var(--blanco);
+  color:var(--secundario);
   font-family: var(--fuente);
 }
 .imgTitulo{    
@@ -61,9 +50,10 @@ header{
   max-width: 8rem;
 }
 @media (min-width: 768px){ 
-  .imgTitulo{        
-    max-height: 30rem;
+  .imgTitulo{    
+    max-height: 8rem;
     max-width: 8rem;
+    justify-self: center;
   }
 }
 /*--------------------------------------------------*/
@@ -92,20 +82,21 @@ header{
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: var(--oscuro); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
   }
-  
+   
   /* The sidepanel links */
   .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
     display: block;
     transition: 0.3s;
+  }
+  ul{
+    list-style: none;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -126,16 +117,13 @@ header{
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    color: white;
     border: none; 
     padding: 1rem;
-    background-color: var(--oscuro);
   }
   @media (min-width: 768px){ 
     .openbtn {
         font-size: 20px;
         cursor: pointer;
-        color: white;
         border: none; 
         width: 25rem;
         padding: 1rem;
@@ -143,7 +131,6 @@ header{
   }
   
   .openbtn:hover {
-    background-color: var(--gris);
     opacity: 0.6;
   }
   @media screen and (max-height: 450px) {
@@ -151,48 +138,16 @@ header{
     .sidebar a {font-size: 18px;}
   }
 
-/*---------------------------------------------------------------------------------------*/
-/*MAIN*/
-/*IMAGENES PAISES*/
 
-/*Div principal que contiene todos los paises*/
-.paises{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr) ;  
-  height: min(99%, 150rem);
-  margin-bottom: 5rem;
-}
-@media (min-width: 900px) {
-  .paises{
-    grid-template-columns: repeat(3, 1fr) ;
-  }
-}
-/*Div que contiene cada pais*/
-.pais{
-  margin: 1rem 1rem 0rem 1rem;
-  padding: 1rem 1rem 0rem 1rem;
-}
-.imgPaises{
-  border-radius: 1.5rem; 
-  width: 100%;
-  gap: 2rem;
-  
-}
-@media (min-width: 900px){ 
-  .imgPaises{
-    width: 100%;
-    border-radius: 1.5rem; 
-  } 
-}
+
 /*--------------------------------------------------*/
 /*FOOTER*/
-footer{
-  background-color: var(--oscuro); 
+.footer{
   position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
-  height: 5rem;
-  color: white;
+  height: 4rem;
   text-align: center;
 }
 /*--------------------------------------------------*/
@@ -200,7 +155,7 @@ footer{
 .iconos{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 2rem;
+  column-gap: 1rem;
   cursor: pointer;
 }
 
@@ -214,19 +169,83 @@ footer{
   z-index: 99;
   border: none;
   outline: none;
-  background-color: var(--oscuro);
-  color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
-#myBtn:hover {
-  background-color: #555;
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*SECCION DESPLEGABLE*/
+.seccion{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / 2;
+  margin: 1rem;
+}
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  transition: 0.4s;
+  text-align: center;
+  border-radius: 1rem;
+}
+/*Adios
+Gracias
+De nada
+Perdón
+No hay de qué*/
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 1rem;
 }
 
- /*--------------------------------------------------*/
 
 
-
+/*--------------------------------------------------*/
+/*MAIN*/
+.contenedor{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+.idioma{
+  display: grid;
+  grid-column: 1 / 3;
+  height: min(99%, 150rem);
+  
+}
+.cultura{
+  display: grid; 
+  grid-column: 3 / 4;
+  height: min(99%, 150rem);
+  text-align: center;
+}
+.panel{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  height: min(99%, 150rem);
+}
+.pais{
+  margin: 1rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
+}
+@media (min-width: 768px){ 
+  .imgPaises{
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+}
+.imgIdiomas{
+  width: 100%;
+  max-height: 200rem;
+}
 

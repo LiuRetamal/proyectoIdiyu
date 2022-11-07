@@ -1,12 +1,12 @@
 :root{
-    --blanco: #FFFFFF;
-    --oscuro: #000000;
-    --primario: #F16D6D;
-    --primarioClaro: #CF150C;
-    --primarioSegundo: #951717;
-    --secundario: #F7D970;
-    --gris: #757575;
-    --grislaro: #DFE9F3;
+  --blanco: #FFFFFF;
+  --oscuro: #000000;
+  --primario: #61D57B;
+  --primarioClaro: #1CB63E;
+  --primarioSegundo: #056C1A;
+  --secundario: #CF150C;
+  --gris: #757575;
+  --grislaro: #DFE9F3;
 }
 
 body{
@@ -25,7 +25,7 @@ header{
   
 }
 .titulo{
-  color:var(--secundario);
+  color:var(--blanco);
   font-family: var(--fuente);
 }
 /*--------------------------------------------------*/
@@ -37,7 +37,7 @@ header{
    
   /* The sidepanel links */
   .sidepanel a {
-    color: var(--secundario);
+    color: var(--blanco);
   }
   /* When you mouse over the navigation links, change their color */
   .sidepanel a:hover {
@@ -46,12 +46,12 @@ header{
   
   /* Style the button that is used to open the sidepanel */
   .openbtn {
-    color: var(--secundario);
+    color: var(--blanco);
     background-color: var(--primarioClaro);
   }
   @media (min-width: 768px){ 
     .openbtn {
-        color: var(--secundario);
+        color: var(--blanco);
       }
   }
   
@@ -66,19 +66,19 @@ header{
 #myBtn {
  
   background-color: var(--primarioClaro);
-  color: var(--secundario);
+  color: var(--blanco);
   
 }
 
 #myBtn:hover {
-  background-color: var(--secundario);
+  background-color: var(--blanco);
   color: var(--primarioClaro);
 }
 
 /*--------------------------------------------------*/
 /*FOOTER*/
 .footer{
-  background-color: var(--primarioClaro);
+  background-color: var(--secundario);
   width: 100%;
   height: 4rem;
   color: var(--secundario);

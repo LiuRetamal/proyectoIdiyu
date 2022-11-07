@@ -1,12 +1,13 @@
 :root{
-    --blanco: #FFFFFF;
-    --oscuro: #000000;
-    --primario: #F16D6D;
-    --primarioClaro: #CF150C;
-    --primarioSegundo: #951717;
-    --secundario: #F7D970;
-    --gris: #757575;
-    --grislaro: #DFE9F3;
+  --blanco: #FFFFFF;
+  --oscuro: #000000;
+  --primario: #61D57B;
+  --primarioClaro: #1CB63E;
+  --primarioSegundo: #056C1A;
+  --secundario: #F7D970;
+  --terciario: #CF150C;
+  --gris: #757575;
+  --grislaro: #DFE9F3;
 }
 
 body{
@@ -78,7 +79,7 @@ header{
 /*--------------------------------------------------*/
 /*FOOTER*/
 .footer{
-  background-color: var(--primarioClaro);
+  background-color: var(--terciario);
   width: 100%;
   height: 4rem;
   color: var(--secundario);

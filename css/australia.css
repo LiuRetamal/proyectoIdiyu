@@ -1,12 +1,14 @@
 :root{
     --blanco: #FFFFFF;
     --oscuro: #000000;
-    --primario: #F16D6D;
-    --primarioClaro: #CF150C;
-    --primarioSegundo: #951717;
-    --secundario: #F7D970;
+    --primario: #7981C6;
+    --primarioClaro: #0B188D;
+    --primarioSegundo: #0E1660;
+    --secundario: #F16D6D;
     --gris: #757575;
+    --fuente-principal: 3.8rem;
     --grislaro: #DFE9F3;
+    --fuente: 'Lato', sans-serif;
 }
 
 body{
@@ -66,12 +68,12 @@ header{
 #myBtn {
  
   background-color: var(--primarioClaro);
-  color: var(--secundario);
+  color: var(--blanco);
   
 }
 
 #myBtn:hover {
-  background-color: var(--secundario);
+  background-color: var(--blanco);
   color: var(--primarioClaro);
 }
 
