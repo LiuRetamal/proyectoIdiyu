@@ -1,0 +1,39 @@
+<div class="panel">
+                <div class="container">
+                    <img src="img/holaChino.png" alt="" class="image">
+                    <div class="overlay">
+                      <div class="text">Hola</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/adiosChino.png" alt="" class="image">
+                    <div class="overlay">
+                      <div class="text">Adios</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/holaChino.png" alt="" class="image">
+                    <div class="overlay">
+                      <div class="text">Gracias</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/holaChino.png" alt="" class="image">
+                    <div class="overlay">
+                      <div class="text">De Nada</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/holaChino.png" alt="" class="image">
+                    <div class="overlay">
+                      <div class="text">Perdón</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/holaChino.png" alt="" class="image">
+                    <div class="overlay">
+                      <div class="text">No hay de que</div>
+                    </div>
+                </div>
+                              
+            </div>         

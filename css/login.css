@@ -1,55 +1,89 @@
 :root{
-    --blanco: #FFFFFF;
     --oscuro: #000000;
-    --primario: #F16D6D;
-    --primarioClaro: #CF150C;
-    --primarioSegundo: #951717;
-    --secundario: #F7D970;
-    --tercero: #61D57B;
     --gris: #757575;
-    --fuente-principal: 3.8rem;
-    --grislaro: #DFE9F3;
     --fuente: 'Lato', sans-serif;
-    --pais:rgba(0, 0, 0, 0.1);
-}
-
-html{
-    font-size: 62.5%;
-    box-sizing: border-box;/*Hack Box Model*/
-    scroll-snap-type: y mandatory;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;/*Predeterminar medidas para padding*/
-}
-body{
-    font-size: 16px;
-    font-family: var(--fuente);
-    background-color:lightgrey;
-    margin: 0;
 }
 
 /********************************CUERPO****************************************/
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.imagen{
+    display: grid;
+    grid-column: 1/2;
+    filter: blur(2px);
+    position:absolute;
+    width: 100%;
+    max-height: 100%;
+    z-index: -1;
+}
 .formulario{
-    padding: 5rem;
+    display: grid;
+    grid-column: 1/3;
+    background-color: black;
+    color: white;
+    border-radius: 5rem;
+    width: 50%;
+    margin: 15rem 0 0 45rem ;
 }
 form{
+    
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
-label{
+.nom{
+    width: 100%;
+    height: 10rem;
+    padding: 0;
+}
+.correo{
+    width: 100%;
+    height: 10rem;
+    padding: 0;
+}
+.paswd{
+    width: 100%;
+    height: 10rem;
+    padding: 0;
+}
+.cuadr{
+    width: 100%;
+    height: 10rem;
+    padding-top: 5rem;
+}
+.btn{
+    width: 100%;
+    height: 10rem;
+    padding-top: 1rem;
+    align-self: center;
+}
+
+.nombre, .contraseña,.correo {
     display: block;
     text-align: center;
     padding:2rem;
     text-transform: uppercase;
     font-weight:500;
 }
-.cuadrado{
-    display: inline;
-}
 .inputs{
     width:50%;
     padding: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--gris);
+    text-align: center;
 }
+@media (max-width: 498px){ 
+    .inputs{
+        width:90%;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        border: 1px solid var(--gris);
+    }
+}
+
 .boton{
     width: 20%;
     height: 5rem;
@@ -57,4 +91,33 @@ label{
     border: 1px solid var(--gris);
     text-transform: uppercase;
     font-weight: 300;
+    cursor: pointer;
 }
+@media (max-width: 498px){ 
+    .boton{
+        width: 50%;
+        height: 5rem;
+        border-radius: 10px;
+        border: 1px solid var(--gris);
+        text-transform: uppercase;
+        font-weight: 300;
+        cursor: pointer;
+    }
+}
+a{
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+span{
+    color: blue;
+}
+.footer{
+    position: fixed;
+    text-align: center;
+    height: 5rem;
+  }
+
+
+

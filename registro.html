@@ -15,24 +15,24 @@
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 
-    <!--Cargar css diseño login-->
+    <!--Cargar css contacto-->
     <link rel="preload" href="css/login.css" as="style">
     <link rel="stylesheet" href="css/login.css">
 
-    <!--Script de menu desplegable-->
+    <!--Script menú desplegable-->
     <script type="text/javascript" src="js/idiyu.js"></script>
+
     <!--Logo en la pestaña-->
     <link rel="shortcut icon" href="img/logo.png">
 
     <!--titulo de la pestaña-->
-    <title>Log In</title>
+    <title>Registro</title>
 </head>
 <body>
-    
 <!--------------------------------------------------HEADER / CABECERA-------------------------------------------------------->
     <header>
         <!--Título de la página-->
-        <h1  class="titulo">Login</h1>
+        <h1  class="titulo">Registro</h1>
         <!--Logo de la página-->
         <a href="index.html">
             <img src="../img/logo.png" class="imgTitulo" alt="">
@@ -58,43 +58,47 @@
             <a href="contacto.html">Contacto</a>
         </div>
     </header>
+
 <!--------------------------------------------------MAIN / CUERPO-------------------------------------------------------->
-    <div class="contenido">
+    <section class="contenido">
         <img src="../img/mapa.jpg" alt="" class="imagen">
         <div class="formulario">
-            <form>
+         
+         <form > 
+                 <!--Etiquetas y Recuadros para rellenar el formulario-->
+                 <!--Usamos divs para agrupar cada uno-->
+                 
                 <div class="nom" >
                     <!-- Username -->
                     <label for="name" class="nombre">Nombre de usuario:</label>
                     <input type="name" id="name"class="inputs">
                 </div>
-                <div class="paswd">
-                        <!-- Password -->
-                        <label for="passwd" class="contraseña">Contraseña:</label>
-                        <input type="password" id="passwd" class="inputs">
-                    
+                <div class="nom" >
+                    <!-- Username -->
+                    <label for="correo" class="nombre">Correo:</label>
+                    <input  id="correo"  class="inputs"type="email" placeholder="Escribe tu e-mail">
                 </div>
-                    
-                <div class="cuadr">
-                        <a href="registro.html">¿No tienes cuenta? <span>Registrate</span></a>
-                        <input type="checkbox" class="cuadro">
-                        <label class="check" for="checkbox" class="cuadrado">Mantener iniciada la Sesión</label>
-                </div>
-                        
-                <div class="btn">
-                    <!-- Submit Button -->
-                    <input type="submit" value="Login" class="boton">
-                </div>    
-                
-            </form>  
-                
+           
+            <div class="paswd">
+                <!-- Password -->
+                <label for="passwd" class="contraseña">Contraseña:</label>
+                <input type="password" id="passwd" class="inputs">
+            
+            </div>
+            <br>
+            <div class="btn">
+                <input class="boton" type="submit" value="Enviar">
+            </div> 
+         </form>
         </div>
-    </div>
-    
-    
+
+    </section>
 <!--------------------------------------------------FOOTER / PIE-------------------------------------------------------->
+    
     <footer class="footer">
+        <!--Div para agrupar los iconos-->
         <div class="iconos">
+            <!--Div para icono instagram-->
             <div class="icono1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -103,6 +107,7 @@
                     <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                 </svg>
             </div>
+            <!--Div para icono linkedin-->
             <div class="icono2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -111,7 +116,9 @@
                     <line x1="8" y1="8" x2="8" y2="8.01" />
                     <line x1="12" y1="16" x2="12" y2="11" />
                     <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                </svg></div>
+                </svg>
+            </div>
+            <!--Div para icono github-->
             <div class="icono3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -119,8 +126,6 @@
                 </svg>
             </div>
         </div>      
-        
     </footer>
-
 </body>
 </html>

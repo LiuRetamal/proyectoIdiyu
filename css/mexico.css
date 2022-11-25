@@ -84,3 +84,14 @@ header{
   color: var(--secundario);
 }
 
+.tituloCultura{
+  background-color: var(--primarioClaro);
+  color: var(--blanco);
+}
+
+/*SECCION DESPLEGABLE*/
+.accordion{
+  background-color: var(--secundario);
+  color: var(--blanco);
+  font-weight: bold;
+}

@@ -32,12 +32,12 @@
 <!--------------------------------------------------HEADER / CABECERA-------------------------------------------------------->
     <header>
         <!--Título de la página-->
-        <a href="index.html" class="titulo">
-            <h1 >Contacto</h1>
-        </a>
+        <h1  class="titulo">Contacto</h1>
         <!--Logo de la página-->
-        <img src="../img/logo.png" class="imgTitulo" alt="">
-
+        <a href="index.html">
+            <img src="../img/logo.png" class="imgTitulo" alt="">
+        </a>
+        
         <!--Icono para menú desplegable-->
         <div class="burger">
             <button class="openbtn" onclick="openNav()">&#9776;</button>
@@ -45,7 +45,7 @@
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="login.html">Log In</a>
-            <a href="#">Paises
+            <a href="index.html">Paises
                 <ul>
                     <li><a href="china.html">China</a></li>
                     <li><a href="australia.html">Australia</a></li>
@@ -56,52 +56,44 @@
                 </ul>
             </a>
             <a href="contacto.html">Contacto</a>
-            <a href="#">Log Out</a>
         </div>
     </header>
 
 <!--------------------------------------------------MAIN / CUERPO-------------------------------------------------------->
-    <section>
-         <!--Título del Formulario-->
-         <h2>Contacto</h2>
 
-         <form class="formulario">
-             <fieldset>
-                 <!--Legend para indicaciones al usuario-->
-                 <legend>Contáctame llenando todos los campos</legend>
- 
-                 <!--Etiquetas y Recuadros para rellenar el formulario-->
-                 <!--Usamos divs para agrupar cada uno-->
-                 <div class="contenedor-campos">
-                     <div class="campo">
-                         <label for="">Nombre</label>
-                         <input class="input-text" type="text" placeholder="Escribe tu nombre">
-                     </div>
-     
-                     <div class="campo">
-                         <label for="">Correo</label>
-                         <input class="input-text" type="email" placeholder="Escribe tu e-mail">
-                     </div>
-     
-                     <div class="campo">
-                         <label for="">Teléfono</label>
-                         <input class="input-text" type="tel" placeholder="Escribe tu número">
-                     </div>
-     
-                     <div class="campo">
-                         <label for="">Mensaje</label>
-                         <textarea class="input-text"></textarea>
-                     </div>
-                     
-                     <div class="alinear-derecha flex">
-                         <input class="boton w-sm-100" type="submit" value="Enviar">
-                     </div>
-     
-                 </div>
-                 
-             </fieldset>
- 
-         </form>
+    
+    <section class="contenido">
+        <img src="../img/mapa.jpg" alt="" class="imagen">
+        <div class="formulario">
+            <form > 
+                    <!--Etiquetas y Recuadros para rellenar el formulario-->
+                    <!--Usamos divs para agrupar cada uno-->
+                    
+                <div class="nom">
+                    <label for="nombre">Nombre:</label>
+                    <input class="input-text" id="nombre" type="text" placeholder="Escribe tu nombre">
+                </div>
+
+                <div class="correo">
+                    <label for="correo">Correo:</label>
+                    <input class="input-text" id="correo" type="email" placeholder="Escribe tu e-mail">
+                </div>
+
+                <div class="telf">
+                    <label for="telf">Teléfono:</label>
+                    <input class="input-text" id="telf" type="tel" placeholder="Escribe tu número">
+                </div>
+
+                <div class="mensaje">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" class="input-text"></textarea>
+                </div>
+                
+                <div class="btn">
+                    <input class="boton" type="submit" value="Enviar">
+                </div> 
+            </form>
+        </div> 
     </section>
 <!--------------------------------------------------FOOTER / PIE-------------------------------------------------------->
     

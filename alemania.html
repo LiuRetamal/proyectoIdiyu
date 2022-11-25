@@ -28,12 +28,12 @@
 <!--------------------------------------------------HEADER / CABECERA-------------------------------------------------------->
     <header>
         <!--Título de la página-->
-        <a href="index.html" class="titulo">
-            <h1 >Alemania</h1>
-        </a>
+        <h1  class="titulo">Alemania</h1>
         <!--Logo de la página-->
-        <img src="../img/logo.png" class="imgTitulo" alt="">
-
+        <a href="index.html">
+            <img src="../img/logo.png" class="imgTitulo" alt="">
+        </a>
+        
         <!--Icono para menú desplegable-->
         <div class="burger">
             <button class="openbtn" onclick="openNav()">&#9776;</button>
@@ -41,7 +41,7 @@
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="login.html">Log In</a>
-            <a href="#">Paises
+            <a href="index.html">Paises
                 <ul>
                     <li><a href="china.html">China</a></li>
                     <li><a href="australia.html">Australia</a></li>
@@ -52,7 +52,6 @@
                 </ul>
             </a>
             <a href="contacto.html">Contacto</a>
-            <a href="#">Log Out</a>
         </div>
     </header>
 
@@ -217,41 +216,84 @@
     </section>
     <!--Seccion cultura-->
     <section class="cultura">
-        <div class="ciencia">
-            <h2>Sección Ciencia</h2>
-            <h4>Título noticia</h4>
-            <img src="img/ciencia.jpg" alt="">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Fuga odit dignissimos aliquid obcaecati facere, soluta corporis quis quasi accusantium quidem? 
-                Libero unde ipsum dolores suscipit sit at exercitationem officiis nesciunt?
-            </p>
-        </div>
-        <div class="deportes">
-            <h2>Sección Deportes</h2>
-            <h4>Título noticia</h4>
-            <img src="img/deportes.jpg" alt="">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Fuga odit dignissimos aliquid obcaecati facere, soluta corporis quis quasi accusantium quidem? 
-                Libero unde ipsum dolores suscipit sit at exercitationem officiis nesciunt?
-            </p>
-        </div>
-        <div class="naturaleza">
-            <h2>Sección Medio Ambiente</h2>
-            <h4>Título noticia</h4>
-            <img src="img/naturaleza.jpg" alt="">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Fuga odit dignissimos aliquid obcaecati facere, soluta corporis quis quasi accusantium quidem? 
-                Libero unde ipsum dolores suscipit sit at exercitationem officiis nesciunt?
-            </p>
-        </div>
-        <div class="arte">
-            <h2>Sección Arte</h2>
-            <h4>Título noticia</h4>
-            <img src="img/arte.JPG" alt="">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Fuga odit dignissimos aliquid obcaecati facere, soluta corporis quis quasi accusantium quidem? 
-                Libero unde ipsum dolores suscipit sit at exercitationem officiis nesciunt?
-            </p>
+        <div class="noticias">
+            <table class="ciencia">
+                <tr class="tituloCultura">
+                    <td><h2>Ciencia</h2></td>
+                </tr>
+                <tr>
+                    <td><h4>Titulo Noticia</h4></td>            
+                </tr>
+                <tr>
+                    <td><img src="img/ciencia.jpg" alt=""></td>            
+                </tr>
+                <tr>
+                    <td>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde minus cupiditate autem, quae provident sapiente accusantium? 
+                            Ipsam magnam minima consectetur voluptatem autem excepturi delectus veritatis, 
+                            provident perspiciatis quasi facere quidem.</p>
+                    </td>
+                </tr>
+            </table>
+            
+            <table class="deportes">
+                <tr class="tituloCultura">
+                    <td><h2>Deportes</h2></td>
+                </tr>
+                <tr>
+                    <td><h4>Titulo Noticia</h4></td>            
+                </tr>
+                <tr>
+                    <td><img src="img/deportes.jpg" alt=""></td>            
+                </tr>
+                <tr>
+                    <td>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde minus cupiditate autem, quae provident sapiente accusantium? 
+                            Ipsam magnam minima consectetur voluptatem autem excepturi delectus veritatis, 
+                            provident perspiciatis quasi facere quidem.</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="naturaleza">
+                <tr class="tituloCultura">
+                    <td><h2>Naturaleza</h2></td>
+                </tr>
+                <tr>
+                    <td><h4>Titulo Noticia</h4></td>            
+                </tr>
+                <tr>
+                    <td><img src="img/naturaleza.jpg" alt=""></td>            
+                </tr>
+                <tr>
+                    <td>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde minus cupiditate autem, quae provident sapiente accusantium? 
+                            Ipsam magnam minima consectetur voluptatem autem excepturi delectus veritatis, 
+                            provident perspiciatis quasi facere quidem.</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="artes">
+                <tr class="tituloCultura">
+                    <td><h2>Artes</h2></td>
+                </tr>
+                <tr>
+                    <td><h4>Titulo Noticia</h4></td>            
+                </tr>
+                <tr>
+                    <td><img src="img/arte.jpg" alt=""></td>            
+                </tr>
+                <tr>
+                    <td>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde minus cupiditate autem, quae provident sapiente accusantium? 
+                            Ipsam magnam minima consectetur voluptatem autem excepturi delectus veritatis, 
+                            provident perspiciatis quasi facere quidem.</p>
+                    </td>
+                </tr>
+            </table>
         </div>
     </section>
 </div>    

@@ -80,7 +80,22 @@ header{
 .footer{
   background-color: var(--primarioClaro);
   width: 100%;
-  height: 4rem;
+  height: 4.5rem;
   color: var(--secundario);
 }
 
+/*--------------------------------------------------*/
+/*TABLA*/
+
+.tituloCultura{
+  background-color: var(--primarioClaro);
+  color: var(--secundario);
+}
+
+
+/*SECCION DESPLEGABLE*/
+.accordion{
+  background-color: var(--secundario);
+  color: var(--primarioSegundo);
+  font-weight: bold;
+}

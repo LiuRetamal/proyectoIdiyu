@@ -28,12 +28,12 @@
 <!--------------------------------------------------HEADER / CABECERA-------------------------------------------------------->
     <header>
         <!--Título de la página-->
-        <a href="index.html" class="titulo">
-            <h1 >China</h1>
-        </a>
+        <h1  class="titulo">China</h1>
         <!--Logo de la página-->
-        <img src="../img/logo.png" class="imgTitulo" alt="">
-
+        <a href="index.html">
+            <img src="../img/logo.png" class="imgTitulo" alt="">
+        </a>
+        
         <!--Icono para menú desplegable-->
         <div class="burger">
             <button class="openbtn" onclick="openNav()">&#9776;</button>
@@ -41,7 +41,7 @@
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="login.html">Log In</a>
-            <a href="#">Paises
+            <a href="index.html">Paises
                 <ul>
                     <li><a href="china.html">China</a></li>
                     <li><a href="australia.html">Australia</a></li>
@@ -52,25 +52,24 @@
                 </ul>
             </a>
             <a href="contacto.html">Contacto</a>
-            <a href="#">Log Out</a>
         </div>
     </header>
 
 <!--------------------------------------------------MAIN / CUERPO-------------------------------------------------------->
 <div class="contenedor">
 
-
+    
     <section class="idioma">
         <div class="seccion">
             <button class="accordion">Sección 1: Saludos</button>
-            <div class="panel">
+            <div class="panel">                
                 <img src="" alt="">Hola
                 <img src="" alt="">Adios
                 <img src="" alt="">Gracias
                 <img src="" alt="">De Nada
                 <img src="" alt="">Perdón
                 <img src="" alt="">No hay de que                
-            </div>                         
+            </div>               
         </div>
         <div class="seccion">
             <button class="accordion">Sección 1.2: Conocerse</button>
@@ -216,41 +215,84 @@
     </section>
     <!--Seccion cultura-->
     <section class="cultura">
-        <div class="ciencia">
-            <h2>Sección Ciencia</h2>
-            <h4>Título noticia</h4>
-            <img src="img/ciencia.jpg" alt="">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Fuga odit dignissimos aliquid obcaecati facere, soluta corporis quis quasi accusantium quidem? 
-                Libero unde ipsum dolores suscipit sit at exercitationem officiis nesciunt?
-            </p>
-        </div>
-        <div class="deportes">
-            <h2>Sección Deportes</h2>
-            <h4>Título noticia</h4>
-            <img src="img/deportes.jpg" alt="">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Fuga odit dignissimos aliquid obcaecati facere, soluta corporis quis quasi accusantium quidem? 
-                Libero unde ipsum dolores suscipit sit at exercitationem officiis nesciunt?
-            </p>
-        </div>
-        <div class="naturaleza">
-            <h2>Sección Naturaleza</h2>
-            <h4>Título noticia</h4>
-            <img src="img/naturaleza.jpg" alt="">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Fuga odit dignissimos aliquid obcaecati facere, soluta corporis quis quasi accusantium quidem? 
-                Libero unde ipsum dolores suscipit sit at exercitationem officiis nesciunt?
-            </p>
-        </div>
-        <div class="arte">
-            <h2>Sección Arte</h2>
-            <h4>Título noticia</h4>
-            <img src="img/arte.JPG" alt="">
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Fuga odit dignissimos aliquid obcaecati facere, soluta corporis quis quasi accusantium quidem? 
-                Libero unde ipsum dolores suscipit sit at exercitationem officiis nesciunt?
-            </p>
+        <div class="noticias">
+            <table class="ciencia">
+                <tr class="tituloCultura">
+                    <td><h2>Ciencia</h2></td>
+                </tr>
+                <tr>
+                    <td><h4>China lanza nuevo satélite de observación de la Tierra</h4></td>            
+                </tr>
+                <tr>
+                    <td><img src="img/cienciaChina.jpg" alt=""></td>            
+                </tr>
+                <tr>
+                    <td>
+                        <p>China lanzó un nuevo satélite de observación de la Tierra desde el Centro de Lanzamiento de Satélites de Jiuquan, en el noroeste de China, a las 06:45 horas de hoy miércoles (hora de Beijing).</p>
+
+                        <p>El satélite, Gaofen-12 02, fue lanzado a bordo de un cohete portador Gran Marcha-4C y entró con éxito en su órbita planificada.</p>
+                            
+                        <p>El satélite se usará principalmente para estudios topográficos, planificación urbana, diseño de obras viales, estimación de cosechas y operaciones de socorro.</p>
+                            
+                        <p>El lanzamiento fue la misión número 364 de los cohetes portadores de la serie Gran Marcha.</p>
+                    </td>
+                </tr>
+            </table>
+            
+            <table class="deportes">
+                <tr class="tituloCultura">
+                    <td><h2>Deportes</h2></td>
+                </tr>
+                <tr>
+                    <td><h4>Futbol femenino en China recibirá una inversión de 129 millones de euros</h4></td>            
+                </tr>
+                <tr>
+                    <td><img src="img/deportesChino.jpg" alt=""></td>            
+                </tr>
+                <tr>
+                    <td>
+                        <p>El gigante chino del comercio electrónico Grupo Alibaba anunció este viernes que invertirá 1.000 millones de yuanes (unos 145 de dólares, 129 millones de euros) durante la próxima década para fomentar el fútbol femenino en China.</p>
+                        <p>El objetivo de esta aportación, realizada a través de la fundación de su plataforma de servicios y pagos Alipay, es conseguir que el fútbol sea "más sostenible y accesible para las niñas y las mujeres en todo el país", apuntó la compañía fundada por el multimillonario Jack Ma en un comunicado.</p>
+
+                    </td>
+                </tr>
+            </table>
+            <table class="naturaleza">
+                <tr class="tituloCultura">
+                    <td><h2>Naturaleza</h2></td>
+                </tr>
+                <tr>
+                    <td><h4>Comienza Exposición Internacional de Horticultura con más de 1.100 variedades de plantas</h4></td>            
+                </tr>
+                <tr>
+                    <td><img src="img/naturalezaChina.jpg" alt=""></td>            
+                </tr>
+                <tr>
+                    <td>
+                        <p>Más de 1.100 variedades de plantas están en exhibición en la Exposición Internacional de Horticultura que comenzó hoy jueves en la provincia de Jiangsu, en el este de China, informó el comité organizador.</p>
+                        <p>Un total de 64 jardines de exhibición se exponen en los pabellones, incluyendo 13 jardines de ciudades en Jiangsu, 26 jardines de empresas y ciudades de otras partes de China y 25 jardines de exhibición de otros países y de organizaciones internacionales.</p>
+                        <p>Con tanta variedad de plantas en la exposición, se han instalado 27.800 árboles de más de seis metros de alto y 770.000 metros cuadrados de arbustos cortos en jardines de exhibición nacional e internacional, con más de 50 por ciento de plantas en floración.</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="artes">
+                <tr class="tituloCultura">
+                    <td><h2>Artes</h2></td>
+                </tr>
+                <tr>
+                    <td><h4>Encuentran más de 1.000 artefactos en la montaña taoísta china de Wudang</h4></td>            
+                </tr>
+                <tr>
+                    <td><img src="img/arteChino.jpg" alt=""></td>            
+                </tr>
+                <tr>
+                    <td>
+                        <p>Arqueólogos chinos han descubierto más de 1.000 artefactos de una reliquia palaciega en el monte Wudang, un destino conocido por sus templos taoístas en la provincia central de Hubei.</p>
+                        <p>Los artefactos, de los cuales los más antiguos datan de la dinastía Han (202 a.C. - 220 d.C.), incluyen muchos elementos de cerámica y acristalados, utensilios domésticos como candelabros y horquillas, y algunos objetos religiosos, precisó Kang Yuhu, investigador del instituto y jefe del proyecto de excavación del palacio.</p>
+                        <p>Los investigadores consideran actualmente que el relieve de los cinco dragones fue construido y utilizado por la familia real para el ritual de los "cinco dragones rezando por la lluvia".</p>
+                    </td>
+                </tr>
+            </table>
         </div>
     </section>
 </div>    
